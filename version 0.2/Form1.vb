@@ -27,10 +27,10 @@ Public Class Form1
                 Dim iniDate As Date = String.Format(Trim(Str), "yyyy-MM-dd HH:mm")
                 If Date.Compare(iniDate.Date, StartupDate.Date) < 0 Then
                     WritePrivateProfileString("War3Main", "ADData", CurrentTime, StartupPath + "\WH_Set.ini")
-                    MyProcess.StartInfo.FileName = AppPath
-                    MyProcess.StartInfo.WorkingDirectory = AppPath
-                    MyProcess.Start()
                 End If
+                MyProcess.StartInfo.FileName = AppPath
+                MyProcess.StartInfo.WorkingDirectory = AppPath
+                MyProcess.Start()
                 End
             End If
 
@@ -41,10 +41,10 @@ Public Class Form1
                 Dim iniDate As Date = String.Format(Trim(Str), "yyyy-MM-dd HH:mm")
                 If Date.Compare(iniDate.Date, StartupDate.Date) < 0 Then
                     WritePrivateProfileString("War3Main", "ADData", CurrentTime, StartupPath + "\WH_Set.ini")
-                    MyProcess.StartInfo.FileName = AppPath
-                    MyProcess.StartInfo.WorkingDirectory = AppPath
-                    MyProcess.Start()
                 End If
+                MyProcess.StartInfo.FileName = AppPath
+                MyProcess.StartInfo.WorkingDirectory = AppPath
+                MyProcess.Start()
                 End
             End If
 
@@ -55,11 +55,11 @@ Public Class Form1
                 Dim iniDate As Date = String.Format(Trim(Str), "yyyy-MM-dd HH:mm")
                 If Date.Compare(iniDate.Date, StartupDate.Date) < 0 Then
                     WritePrivateProfileString("Main", "IEData", CurrentTime, StartupPath + "\WKSet.ini")
-                    MyProcess.StartInfo.FileName = AppPath
-                    MyProcess.StartInfo.WorkingDirectory = AppPath
-                    MyProcess.Start()
-                    End
                 End If
+                MyProcess.StartInfo.FileName = AppPath
+                MyProcess.StartInfo.WorkingDirectory = AppPath
+                MyProcess.Start()
+                End
             End If
 
             AppPath = StartupPath + "\MouseKey.exe"
@@ -69,11 +69,11 @@ Public Class Form1
                 Dim iniDate As Date = String.Format(Trim(Str), "yyyy-MM-dd HH:mm")
                 If Date.Compare(iniDate.Date, StartupDate.Date) < 0 Then
                     WritePrivateProfileString("Main", "IEData", CurrentTime, StartupPath + "\MouseKey.ini")
-                    MyProcess.StartInfo.FileName = AppPath
-                    MyProcess.StartInfo.WorkingDirectory = AppPath
-                    MyProcess.Start()
-                    End
                 End If
+                MyProcess.StartInfo.FileName = AppPath
+                MyProcess.StartInfo.WorkingDirectory = AppPath
+                MyProcess.Start()
+                End
             End If
         Catch
             Dim ex As New Exception

@@ -27,9 +27,9 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 12)
+        Me.Label1.Size = New System.Drawing.Size(233, 12)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "请移动此文件至加加助手所在目录后再运行"
         '
         'Form1
         '
